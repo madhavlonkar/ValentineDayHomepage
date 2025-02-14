@@ -11,11 +11,31 @@ import dreamlove from "./assets/logos/heart 1.png";
 import saviour from "./assets/logos/saviour.jpg";
 
 const teams = [
-  { name: "Heart Overflow 💖", logo: heartOverflow },
-  { name: "Buggy Pirates 🏴‍☠️🐞", logo: buggyPirates },
-  { name: "Love Bug 🐞🪲", logo: loveBug },
-  { name: "Love Life Savior💻❤️", logo: saviour },
-  { name: "Dream Love💻❤️", logo: dreamlove },
+  {
+    name: "Heart Overflow 💖",
+    logo: heartOverflow,
+    link: "https://finalgameofvalentine.vercel.app/",
+  },
+  {
+    name: "Buggy Pirates 🏴‍☠️🐞",
+    logo: buggyPirates,
+    link: "https://drive.google.com/file/d/1O1Q7Rct8mi1DIPIrqBCzY4FtlKZNGO1G/view?usp=sharing",
+  },
+  {
+    name: "Love Bug 🐞🪲",
+    logo: loveBug,
+    link: "https://drive.google.com/drive/folders/1PlbilrawxSmIyxu2N47tkn1UkJczn-3t?usp=sharing",
+  },
+  {
+    name: "Love Life Savior💻❤️",
+    logo: saviour,
+    link: "https://drive.google.com/drive/folders/1_UkSW1DXxUhtGO8UU8-i7qpjmbnIFxX7?usp=sharing",
+  },
+  {
+    name: "Dream Love💻❤️",
+    logo: dreamlove,
+    link: "https://drive.google.com/file/d/1vAj2zhXAgDx3hXZNbiJTej_wQziNMZyM/view?usp=sharing",
+  },
 ];
 
 const App = () => {
@@ -46,7 +66,12 @@ const App = () => {
           {/* Teams Section */}
           <div className="row justify-content-center">
             {teams.map((team, index) => (
-              <div key={index} className="col-12 col-md-4 col-lg-3 mb-4">
+              <div
+                key={index}
+                className="col-12 col-md-4 col-lg-3 mb-4"
+                onClick={() => window.open(team.link, "_blank")}
+                style={{ cursor: "pointer" }}
+              >
                 <div className="team-card shadow-lg border-0 rounded-4">
                   {/* Darkened Background Image */}
                   <div className="team-card-img">
