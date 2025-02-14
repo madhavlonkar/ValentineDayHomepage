@@ -7,12 +7,15 @@ import companyLogo from "./assets/logos/Container.png";
 import heartOverflow from "./assets/logos/heartOverflow.jpg";
 import buggyPirates from "./assets/logos/buggyPirates.jpeg";
 import loveBug from "./assets/logos/lovebug.jpg";
+import dreamlove from "./assets/logos/heart 1.png";
+import saviour from "./assets/logos/saviour.jpg";
 
 const teams = [
   { name: "Heart Overflow 💖", logo: heartOverflow },
   { name: "Buggy Pirates 🏴‍☠️🐞", logo: buggyPirates },
   { name: "Love Bug 🐞🪲", logo: loveBug },
-  { name: "Love Life Savior💻❤️", logo: heartOverflow },
+  { name: "Love Life Savior💻❤️", logo: saviour },
+  { name: "Dream Love💻❤️", logo: dreamlove },
 ];
 
 const App = () => {
