@@ -52,7 +52,11 @@ const App = () => {
 
                   {/* Overlapping Logo */}
                   <div className="team-logo-container">
-                    <img src={team.logo} alt={team.name} className="team-logo" />
+                    <img
+                      src={team.logo}
+                      alt={team.name}
+                      className="team-logo"
+                    />
                   </div>
 
                   {/* Card Content */}
@@ -76,9 +80,12 @@ const App = () => {
           </div>
 
           {/* Feedback Button */}
-          <button className="btn btn-danger fw-bold mt-5 px-5 py-3 feedback-btn">
+          <a
+            href="https://forms.office.com/r/esr1qDaY9q"
+            className="btn btn-danger fw-bold mt-5 px-5 py-3 feedback-btn"
+          >
             Send Your Feedback
-          </button>
+          </a>
         </div>
       </div>
     </>
